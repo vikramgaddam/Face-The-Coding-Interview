@@ -1,0 +1,562 @@
+<set1>
+	<questions>
+		<question_no>0</question_no>
+		<question>
+			<ques_desc>this is a dummy question</ques_desc>
+			<option1>dummy</option1>
+			<option2>dummy</option2>
+			<option3>dummy</option3>
+			<option4>dummy</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+	<questions>
+		<question_no>1</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    int main()&lt;br&gt;
+			    {&lt;br&gt;
+			        short int i = 20;&lt;br&gt;
+			        char c = 97;&lt;br&gt;
+			        printf("%d, %d, %d\n", sizeof(i), sizeof(c), sizeof(c + i));&lt;br&gt;
+			        return 0;&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> 2, 1, 2</option1>
+			<option2> 2, 1, 1</option2>
+			<option3> 2, 1, 4</option3>
+			<option4> 2, 2, 8</option4>
+			<answer>3</answer>
+		</question>
+	</questions>
+	<questions>
+		<question_no>2</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    void main()&lt;br&gt;
+			    {&lt;br&gt;
+			        int i = 0;&lt;br&gt;
+			        if( i = 0 )&lt;br&gt;
+			     {&lt;br&gt;   
+			        printf("Hello");&lt;br&gt;
+			        continue;&lt;br&gt;
+			    }&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> Hello is printed infinite times</option1>
+			<option2> Hello</option2>
+			<option3> Varies</option3>
+			<option4> Compile time error</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>3</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    int main()&lt;br&gt;
+			    {&lt;br&gt;
+			        int a = 1, b = 1, c;&lt;br&gt;
+			        c = a++ + b;&lt;br&gt;
+			        printf("%d, %d, a, b");&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> a = 1,b = 1</option1>
+			<option2> a = 2,b = 1</option2>
+			<option3> a = 1,b = 2</option3>
+			<option4> a = 2,b = 2</option4>
+			<answer>2</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>4</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    struct student&lt;br&gt;
+			    {&lt;br&gt;
+			    };&lt;br&gt;
+			    void main()&lt;br&gt;
+			    {&lt;br&gt;
+			        struct student s[2];&lt;br&gt;
+			        printf("%d", sizeof(s));&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> 2</option1>
+			<option2> 4</option2>
+			<option3> 8</option3>
+			<option4> 0</option4>
+			<answer>4</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>5</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    struct temp&lt;br&gt;
+			    {&lt;br&gt;
+			    int a;&lt;br&gt;
+			    int b;&lt;br&gt;
+			    int c;&lt;br&gt;
+			    };&lt;br&gt;
+			    main()&lt;br&gt;
+			    {&lt;br&gt;
+			        struct temp p[] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> No Compile time error, generates an array of structure of size 3</option1>
+			<option2> No Compile time error, generates an array of structure of size 9</option2>
+			<option3> Compile time error, illegal declaration of a multidimensional array</option3>
+			<option4> Compile time error, illegal assignment to members of structure</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>6</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    struct temp&lt;br&gt;
+			    {&lt;br&gt;
+			    int a;&lt;br&gt;
+			    int b;&lt;br&gt;
+			    int c;&lt;br&gt;
+			    }p[] = {0};&lt;br&gt;
+			    main()&lt;br&gt;
+			    {&lt;br&gt;
+			        printf("%d", sizeof(p));&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> 4</option1>
+			<option2> 12</option2>
+			<option3> 16</option3>
+			<option4> Can’t be estimated due to ambigous initialization of array</option4>
+			<answer>2</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>7</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    void main()&lt;br&gt;
+			    {&lt;br&gt;
+			    int i = 0;&lt;br&gt;
+			    if (i == 0)
+			    {&lt;br&gt;
+			    goto label;&lt;br&gt;
+			    }&lt;br&gt;
+			     label: printf("Hello");&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> Nothing</option1>
+			<option2> Error</option2>
+			<option3> Infinite Hello</option3>
+			<option4> Hello</option4>
+			<answer>4</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>8</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    int main()&lt;br&gt;
+			    {&lt;br&gt;
+			    unsigned int a = 10;&lt;br&gt;
+			    a = ~a;&lt;br&gt;
+			    printf("%d\n", a);&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> -9</option1>
+			<option2> -10</option2>
+			<option3> -11</option3>
+			<option4> 10</option4>
+			<answer>3</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>9</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    int main()&lt;br&gt;
+			    {&lt;br&gt;
+			    int a = 2;&lt;br&gt;
+			    if(a >> 1)&lt;br&gt;
+			    printf("%d\n", a);&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> 0</option1>
+			<option2> 1</option2>
+			<option3> 2</option3>
+			<option4> No output</option4>
+			<answer>3</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>10</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    void main()&lt;br&gt;
+			    {&lt;br&gt;
+			    int x = 97;&lt;br&gt;
+			    int y = sizeof(x++);&lt;br&gt;
+			    printf("x is %d", x);&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> x is 97</option1>
+			<option2> x is 98</option2>
+			<option3> x is 99</option3>
+			<option4> Run time error</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>11</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    int main()&lt;br&gt;
+			    {&lt;br&gt;
+			    register static int i = 97;&lt;br&gt;
+			    i = 11;&lt;br&gt;
+			    printf("%d\n", i);&lt;br&gt;
+			    }&lt;br&gt;
+
+			</ques_desc>
+
+			<option1> 10</option1>
+			<option2> Compile time error</option2>
+			<option3> undefined behavior</option3>
+			<option4> 11</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>12</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    void main()&lt;br&gt;
+			    {&lt;br&gt;
+			    register int x = 5;&lt;br&gt;
+			    m();&lt;br&gt;
+			    printf("x is %d", x);&lt;br&gt;
+			    }&lt;br&gt;
+			    void m()&lt;br&gt;
+			    {&lt;br&gt;
+			    x++;&lt;br;&gt;
+			    }&lt;br&gt;
+			</ques_desc>
+
+			<option1> 6</option1>
+			<option2> 5</option2>
+			<option3> Junk value</option3>
+			<option4> Compile time error</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+	<questions>
+		<question_no>13</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    typedef struct student&lt;br&gt;
+			    {&lt;br&gt;
+			    char *a;&lt;br&gt;
+			    }stu;&lt;br&gt;
+			    
+			    void main()&lt;br&gt;
+			    {&lt;br&gt;
+			    struct stu s;&lt;br;&gt;
+			    s.a = "hi";&lt;br;&gt;
+			    printf("%s", s.a);&lt;br;&gt;
+			    }&lt;br&gt;
+			</ques_desc>
+
+			<option1> h</option1>
+			<option2> hi</option2>
+			<option3> varies</option3>
+			<option4> Compile time error</option4>
+			<answer>4</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>14</question_no>
+		<question>
+			<ques_desc>#include&lt; stdio.h&gt; &lt;br&gt;
+			    typedef struct p&lt;br&gt;
+			    {&lt;br&gt;
+			    int x, y;&lt;br&gt;
+			    };&lt;br&gt;
+			    
+			    int main()&lt;br&gt;
+			    {&lt;br&gt;
+			    p k1 = {1, 2};&lt;br;&gt;
+			    printf("%d\n", k1.x);&lt;br;&gt;
+			    }&lt;br&gt;
+			</ques_desc>
+
+			<option1> 1</option1>
+			<option2> 0</option2>
+			<option3> depends on standard</option3>
+			<option4> Compile time error</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+<questions>
+		<question_no>15</question_no>
+		<question>
+			<ques_desc>The following code ‘for(;;)’ represents an infinite loop. It can be terminated by.&lt;br;&gt;
+			</ques_desc>
+
+			<option1> break</option1>
+			<option2> exit(0)</option2>
+			<option3> abort()</option3>
+			<option4> All the above</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>16</question_no>
+		<question>
+			<ques_desc>Which of the following cannot be used as LHS of the expression in for (exp1;exp2; exp3) ?&lt;br;&gt;
+			</ques_desc>
+
+			<option1> variable</option1>
+			<option2> function</option2>
+			<option3> typedef</option3>
+			<option4> macros</option4>
+			<answer>4</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>17</question_no>
+		<question>
+			<ques_desc>What is the default return type if it is not specified in function definition?&lt;br;&gt;
+			</ques_desc>
+
+			<option1> void</option1>
+			<option2> int</option2>
+			<option3> double</option3>
+			<option4> short int</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>18</question_no>
+		<question>
+			<ques_desc>functions can return enumeration constants in c?&lt;br;&gt;
+			</ques_desc>
+
+			<option1> true</option1>
+			<option2> false</option2>
+			<option3> depends on compiler</option3>
+			<option4> depends on standard</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>19</question_no>
+		<question>
+			<ques_desc>For binary files, a ___ must be appended to the mode string.&lt;br;&gt;
+			</ques_desc>
+
+			<option1> Nothing</option1>
+			<option2> "b"</option2>
+			<option3> "binary"</option3>
+			<option4> 01</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+	<questions>
+		<question_no>20</question_no>
+		<question>
+			<ques_desc>scanf returns as its value&lt;br;&gt;
+			</ques_desc>
+
+			<option1> Number of successfully matched and assigned input items</option1>
+			<option2> Nothing</option2>
+			<option3> Number of characters properly printed</option3>
+			<option4>  Error</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>21</question_no>
+		<question>
+			<ques_desc>Which keyword can be used for coming out of recursion?&lt;br;&gt;
+			</ques_desc>
+
+			<option1> break</option1>
+			<option2> return</option2>
+			<option3> exit</option3>
+			<option4> Both (a) and (b)</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>22</question_no>
+		<question>
+			<ques_desc>The conversion characters d, i, o, u, and x may be preceded by h in scanf to indicate&lt;br;&gt;
+			</ques_desc>
+
+			<option1>  A pointer to short</option1>
+			<option2> A pointer to long</option2>
+			<option3> Nothing</option3>
+			<option4> Error</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>23</question_no>
+		<question>
+			<ques_desc> Which of the following operand can be applied to pointers p and q?
+     (Assuming initialization as int *a = (int *)2; int *b = (int *)3;)&lt;br;&gt;
+			</ques_desc>
+
+			<option1> a+b</option1>
+			<option2> a-b</option2>
+			<option3> a*b</option3>
+			<option4> a/b</option4>
+			<answer>2</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>24</question_no>
+		<question>
+			<ques_desc> What is the sizeof(char) in a 32-bit C compiler?&lt;br;&gt;
+			</ques_desc>
+
+			<option1> 1 bit</option1>
+			<option2> 2 bits</option2>
+			<option3> 1 byte</option3>
+			<option4> 2 bytes</option4>
+			<answer>3</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>25</question_no>
+		<question>
+			<ques_desc> Within main, return expr statement is equivalent to.&lt;br;&gt;
+			</ques_desc>
+
+			<option1> abort(expr)</option1>
+			<option2> exit(expr)</option2>
+			<option3> ferror(expr)</option3>
+			<option4> None of the mentioned</option4>
+			<answer>2</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>26</question_no>
+		<question>
+			<ques_desc>  stderr is similar to?&lt;br;&gt;
+			</ques_desc>
+
+			<option1> stdin</option1>
+			<option2> stdout</option2>
+			<option3> Both stdout and stdin</option3>
+			<option4> None of the mentioned</option4>
+			<answer>2</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>27</question_no>
+		<question>
+			<ques_desc>What are the Properties of first argument of a printf functions?&lt;br;&gt;
+			</ques_desc>
+
+			<option1> It is defined by user</option1>
+			<option2> stdout</option2>
+			<option3> It keeps the record of the types of arguments that will follow</option3>
+			<option4> None of the mentioned</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+<questions>
+		<question_no>28</question_no>
+		<question>
+			<ques_desc>if (a == 1||b == 2){} can be written as:&lt;br;&gt;
+			</ques_desc>
+
+			<option1> if (a == 1)
+    if (b == 2){}</option1>
+			<option2> if (a == 1){}
+    if (b == 2){}</option2>
+			<option3> if (a == 1){}
+    else if (b == 2){}</option3>
+			<option4> None of the mentioned</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>29</question_no>
+		<question>
+			<ques_desc> Which of the following is an invalid if-else statement?
+&lt;br;&gt;
+			</ques_desc>
+
+			<option1> if (if (a == 1)){}</option1>
+			<option2> if (func1 (a)){}</option2>
+			<option3>if (a){}</option3>
+			<option4> if ((char) a){}</option4>
+			<answer>4</answer>
+		</question>
+	</questions>
+
+	<questions>
+		<question_no>30</question_no>
+		<question>
+			<ques_desc> What is the type of the below assignment expression if x is of type float, y is of type int?
+     y = x + y;
+&lt;br;&gt;
+			</ques_desc>
+
+			<option1>int</option1>
+			<option2> float</option2>
+			<option3>There is no type for an assignment expression</option3>
+			<option4> double</option4>
+			<answer>1</answer>
+		</question>
+	</questions>
+
+</set1>
